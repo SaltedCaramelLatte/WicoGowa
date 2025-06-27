@@ -35,7 +35,7 @@ export const useMenuData = () => {
 
     const uploadImageAndGetUrl = async (file: File) => {
         const { data, error } = await supabase.storage
-            .from('olahpikir')
+            .from('wico')
             .upload(`public/${file.name}`, file);
 
         if (error) {
@@ -44,7 +44,7 @@ export const useMenuData = () => {
         }
 
         const { publicUrl } = supabase.storage
-            .from('olahpikir')
+            .from('wico')
             .getPublicUrl(`public/${file.name}`).data;
 
         return publicUrl;
