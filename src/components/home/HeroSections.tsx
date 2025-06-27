@@ -27,7 +27,7 @@ const HeroSection = () => {
                 Warkop nyaman, nongkrong aman. Di sini lo bisa ngopi, kerja, ngobrol, atau sekadar healing tanpa risau.
                 </p>
                 <p className="text-md sm:text-lg text-dark-secondary dark:text-light-secondary mb-4">
-                    Bayar lebih mudah dengan Qris
+                    Bayar Ga Ribet dengan Qris
                 </p>
 
                 <div className="flex w-full justify-between items-center mt-4 px-2">
