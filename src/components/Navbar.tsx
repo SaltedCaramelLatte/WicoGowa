@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '@/images/Transparant.png';
 import {
   Navbar,
   NavbarBrand,
@@ -48,8 +49,9 @@ export default function AppNavbar() {
       className="bg-transparent border-b border-light-border dark:border-dark-border backdrop-blur-md shadow-lg fixed top-0 left-0 w-full z-50 flex justify-between items-center"
       style={{ height: '60px' }}
     >
-      <NavbarBrand className="ml-4">
-        <p className="font-bold text-light dark:text-light">Kedai Kopi</p>
+      <NavbarBrand className="ml-4" >
+         <img src={logo} alt="Logo" className="h-10 w-10 in" />
+        <p className="font-bold text-light dark:text-light">Wico Gowa</p>
       </NavbarBrand>
 
       <NavbarContent className="hidden sm:flex gap-4 justify-center mx-auto" style={{ flex: 1 }}>

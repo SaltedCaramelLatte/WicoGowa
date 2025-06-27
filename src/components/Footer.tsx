@@ -3,9 +3,9 @@ import ThemeToggle from "./ThemeToggle";
 
 const Footer = () => {
     const footer = {
-        contact_email: "olahpikicafe@gmail.com",
-        contact_phone: "+62 123 4567 890",
-        contact_address: "Jl. Sultan Hasanuddin No.182, Pandang Pandang, Kec. Somba Opu, Kabupaten Gowa, Sulawesi Selatan 92111",
+        contact_email: "WicoGowa1@gmail.com",
+        contact_phone: "-",
+        contact_address: "Jl. Sultan Hasanuddin No.180, Pandang Pandang, Kec. Somba Opu, Kabupaten Gowa, Sulawesi Selatan 90221",
         maps_link: "https://maps.app.goo.gl/YCBHV6sriGPkDUwZ6" 
     };
     const currentYear = new Date().getFullYear();
@@ -25,14 +25,14 @@ const Footer = () => {
                     <div className="grid grid-cols-6 md:grid-cols-12 gap-6 md:gap-4 items-center justify-center p-4">
                         <div className="relative col-span-6 md:col-span-4">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.491874647002!2d119.43887307498254!3d-5.185075694792437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee33fbf6d357d%3A0xc11460d73df7aa4c!2sOlah%20Pikir%20Coffee!5e0!3m2!1sid!2sid!4v1730545239284!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.34057055754607!2d119.44331944499521!3d-5.191863654990794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee2422809395f%3A0x960947a07df4b322!2sJl.%20Sultan%20Hasanuddin%20No.180%2C%20Pandang%20Pandang%2C%20Kec.%20Somba%20Opu%2C%20Kabupaten%20Gowa%2C%20Sulawesi%20Selatan%2090221!5e0!3m2!1sen!2sid!4v1751025960000!5m2!1sen!2sid"
                                 width="100%"
                                 height="250"
                                 style={{ border: 0, borderRadius: '12px' }}
                                 allowFullScreen={true}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                title="Lokasi Olah Pikir Cafe"
+                                title="Wico Gowa Place"
                                 className="rounded-lg"
                             ></iframe>
                         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div className="flex justify-between items-center flex-col-reverse sm:flex-row text-center text-sm mt-5 px-8 space-y-4 sm:space-y-0">
                 <span className="text-gray-500 dark:text-gray-400">
-                    &copy; {currentYear} Ruangopi WiFi corner id
+                    &copy; {currentYear} Wico Gowa
                 </span>
                 <div className="flex items-center space-x-4 mt-3 sm:mt-0">
                     <ThemeToggle />

@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
-import { FaWifi, FaTree } from "react-icons/fa";
+import { FaWifi, FaTree, FaToilet, FaWind } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 interface FacilityCardProps {
@@ -32,14 +32,26 @@ const FacilitiesSection = () => {
             <div className="max-w-[900px] mx-auto gap-4 grid grid-cols-12 px-4 sm:px-8">
                 <FacilityCard
                     icon={FaWifi}
-                    title="WiFi.id Corner • 50 Mbps Stabil"
+                    title="WiFi.id Corner • Up To 100 Mbps Stabil"
                     description="Koneksi internet cepat dan stabil langsung dari WiFi.id. Ideal untuk meeting online, upload konten, atau maraton drama favorit tanpa buffering."
                     className="col-span-12 sm:col-span-6"
                 />
                 <FacilityCard
                     icon={FaTree}
                     title="Ruang Terbuka Produktif"
-                    description="Area semi-outdoor dengan akses WiFi stabil, colokan listrik, dan tempat duduk ergonomis — mendukung aktivitas digitalmu di udara terbuka tanpa gangguan."
+                    description="Area semi-outdoor dengan akses WiFi stabil, dan tempat duduk yang mendukung aktivitas digitalmu di udara terbuka tanpa gangguan."
+                    className="col-span-12 sm:col-span-6"
+                />
+                <FacilityCard
+                    icon={FaToilet}
+                    title="Toilet 24 Jam"
+                    description="Toilet yang dijaga kebersihannya setiap Pagi. Silakan gunakan dengan nyaman dan tetap jaga kebersihan untuk pengguna berikutnya."
+                    className="col-span-12 sm:col-span-6"
+                />
+                <FacilityCard
+                    icon={FaWind}
+                    title="Zona Asap Legal!"
+                    description="Ngebul boleh, asal di sini. Jangan bikin yang lain pasif ngebul juga"
                     className="col-span-12 sm:col-span-6"
                 />
 
