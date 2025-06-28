@@ -62,7 +62,7 @@ const MenuItem = ({ item, index, visible }: MenuItemProps) => {
                                 className="text-sm bg-light-primary dark:bg-dark-primary text-white dark:text-black"
                                 radius="full"
                                 size="sm">
-                                Rp {item.price} K
+                                Rp {item.price}
                             </Button>
                         </CardFooter>
                     </Card>

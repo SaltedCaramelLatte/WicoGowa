@@ -49,13 +49,13 @@ const Footer = () => {
                                     </a>
                                 </p>
                                 <p className="text-lg text-gray-500 dark:text-gray-400">
-                                    Telepon:
+                                    {/* Telepon:
                                     <a
                                         href={`tel:${footer.contact_phone}`}
                                         className="text-blue-400 dark:text-blue-300 hover:underline"
                                     >
                                         {footer.contact_phone}
-                                    </a>
+                                    </a> */}
                                 </p>
                                 <p className="text-lg text-gray-500 dark:text-gray-400">
                                     Alamat: {footer.contact_address}
