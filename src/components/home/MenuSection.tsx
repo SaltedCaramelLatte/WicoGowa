@@ -8,7 +8,7 @@ import { MenuItemType } from "./menuList/menuData";
 
 const MenuSection = () => {
     const { menuItems, loading } = useMenuData(); 
-    const [activeTab, setActiveTab] = useState<string>("wicoOriginal");
+    const [activeTab, setActiveTab] = useState<string>("wico-original");
     const [visibleItems, setVisibleItems] = useState<boolean[]>(Array(menuItems.length).fill(false));
     const observer = useRef<IntersectionObserver | null>(null);
     const navigate = useNavigate();
