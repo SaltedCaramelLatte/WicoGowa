@@ -124,9 +124,9 @@ const AddMenuItem = ({ onAdd, uploadImageAndGetUrl, isSubmitting }: AddMenuItemP
                     onChange={(e) => setCategory(e.target.value)}
                     className="p-2 border rounded-md"
                 >
+                    <option value="wico-original">Wico Original</option>
                     <option value="coffee">Coffee</option>
-                    <option value="non-coffee">Non-Coffee</option>
-                    <option value="milk">Milk</option>
+                    <option value="sachet">Milk</option>
                     <option value="tea">Tea</option>
                 </select>
                 <Button type="submit" color="primary" fullWidth disabled={isSubmitting}>
