@@ -50,7 +50,7 @@ const MenuSection = () => {
     const wicoOriginalItems = menuItems.filter(item => item.category === "wico-original");
     const coffeeItems = menuItems.filter(item => item.category === "coffee");
     const sachetItems = menuItems.filter(item => item.category === "sachet");
-    const teaItems = menuItems.filter(item => item.category === "tea");
+    const snackItems = menuItems.filter(item => item.category === "snack");
 
     const renderMenuItems = (list: MenuItemType[], offset: number) => {
         return list.slice(0, 4).map((item, index) => (
@@ -118,9 +118,9 @@ const MenuSection = () => {
                             More
                         </Button>
                     </Tab>
-                    <Tab key="tea" title="Tea">
+                    <Tab key="snack" title="Snack">
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full">
-                            {renderMenuItems(teaItems, coffeeItems.length + coffeeItems.length + sachetItems.length)}
+                            {renderMenuItems(snackItems, coffeeItems.length + coffeeItems.length + sachetItems.length)}
                         </div>
                         <Button
                             onClick={handleMoreClick}
