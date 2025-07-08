@@ -126,8 +126,9 @@ const AddMenuItem = ({ onAdd, uploadImageAndGetUrl, isSubmitting }: AddMenuItemP
                 >
                     <option value="wico-original">Wico Original</option>
                     <option value="coffee">Coffee</option>
-                    <option value="sachet">Milk</option>
-                    <option value="tea">Tea</option>
+                    <option value="sachet">Sachet</option>
+                    <option value="snack">Snack</option>
+                    <option value="other">Other</option>
                 </select>
                 <Button type="submit" color="primary" fullWidth disabled={isSubmitting}>
                     {isSubmitting ? 'Adding...' : 'Add Item'}

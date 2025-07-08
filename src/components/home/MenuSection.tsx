@@ -51,6 +51,7 @@ const MenuSection = () => {
     const coffeeItems = menuItems.filter(item => item.category === "coffee");
     const sachetItems = menuItems.filter(item => item.category === "sachet");
     const snackItems = menuItems.filter(item => item.category === "snack");
+    const otherItems = menuItems.filter(item => item.category === "other");
 
     const renderMenuItems = (list: MenuItemType[], offset: number) => {
         return list.slice(0, 4).map((item, index) => (
@@ -85,7 +86,7 @@ const MenuSection = () => {
                     variant="bordered"
                     onSelectionChange={(key) => setActiveTab(String(key))}
                 >
-                    <Tab key="wicoOriginal" title="Wico Original">
+                    <Tab key="wico-original" title="Wico Original">
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full">
                             {renderMenuItems(wicoOriginalItems, 0)}
                         </div>
@@ -98,7 +99,7 @@ const MenuSection = () => {
                     </Tab>
                     <Tab key="coffee" title="Coffee">
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full">
-                            {renderMenuItems(wicoOriginalItems, coffeeItems.length)}
+                            {renderMenuItems(coffeeItems, wicoOriginalItems.length)}
                         </div>
                         <Button
                             onClick={handleMoreClick}
@@ -120,7 +121,18 @@ const MenuSection = () => {
                     </Tab>
                     <Tab key="snack" title="Snack">
                         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full">
-                            {renderMenuItems(snackItems, coffeeItems.length + coffeeItems.length + sachetItems.length)}
+                            {renderMenuItems(snackItems, wicoOriginalItems.length + coffeeItems.length + sachetItems.length)}
+                        </div>
+                        <Button
+                            onClick={handleMoreClick}
+                            className="mt-4 px-4 py-2 text-white bg-[#b45f33] rounded-full shadow-md hover:bg-[#9e4e29] transition duration-200"
+                        >
+                            More
+                        </Button>
+                    </Tab>
+                    <Tab key="other" title="Other">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full">
+                            {renderMenuItems(otherItems, wicoOriginalItems.length + coffeeItems.length + sachetItems.length + snackItems.length)}
                         </div>
                         <Button
                             onClick={handleMoreClick}
