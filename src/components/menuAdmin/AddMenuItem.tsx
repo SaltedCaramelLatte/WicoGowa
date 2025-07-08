@@ -116,8 +116,8 @@ const AddMenuItem = ({ onAdd, uploadImageAndGetUrl, isSubmitting }: AddMenuItemP
                     onChange={(e) => setStatus(e.target.value)}
                     className="p-2 border rounded-md"
                 >
-                    <option value="available">Available</option>
-                    <option value="unavailable">Unavailable</option>
+                    <option value="ready">Ready</option>
+                    <option value="soldOut">Sold Out</option>
                 </select>
                 <select
                     value={category}
