@@ -74,7 +74,7 @@ const MenuSection = () => {
 
             <div className="w-full max-w-3xl">
                 <Tabs
-                    className="justify-center overflow-x-auto whitespace-nowrap scrollbar-hide flex gap-4 px-4"
+                    className="justify-center overflow-x-auto whitespace-nowrap scrollbar-hide"
                     placement="top"
                     aria-label="Dynamic tabs"
                     style={{ marginTop: '20px' }}
