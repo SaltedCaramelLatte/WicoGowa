@@ -69,10 +69,10 @@ const MenuSection = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center  bg-light-background dark:bg-dark-background min-h-screen pt-24 px-4 lg:px-20">
-            <h2 className="text-4xl font-bold text-light mb-8 dark:text-gray-200 font-bossa">Menu</h2>
+        <div className="overflow-x-auto whitespace-nowrap flex flex-col items-center justify-center  bg-light-background dark:bg-dark-background min-h-screen pt-24 px-4 lg:px-20">
+            <h2 className="text-4xl font-bold text-light mb-8 dark:text-gray-200 font-bossa">MENU</h2>
 
-            <div className="w-full max-w-3xl overflow-x-auto whitespace-nowrap">
+            <div className="overflow-x-auto whitespace-nowrap w-full max-w-3xl">
                 <Tabs
                     className="justify-center"
                     placement="top"
