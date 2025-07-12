@@ -6,13 +6,14 @@ import MenuItem from "./MenuItem";
 import { Button } from "@nextui-org/react";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { MdCoffee, MdFastfood, MdLocalDrink, MdSpaceBar, MdMoreHoriz } from "react-icons/md";
 
 const MENU_CATEGORIES = [
-    { key: "wico-original", title: "Wico Original" },
-    { key: "coffee", title: "Coffee" },
-    { key: "sachet", title: "Sachet" },
-    { key: "snack", title: "Snack" },
-    { key: "other", title: "Other" },
+    { key: "wico-original", title: "Wico Original", icon: <MdCoffee /> },
+    { key: "coffee", title: "Coffee", icon: <MdLocalDrink /> },
+    { key: "sachet", title: "Sachet", icon: <MdFastfood /> },
+    { key: "snack", title: "Snack", icon: <MdSpaceBar /> },
+    { key: "other", title: "Other", icon: <MdMoreHoriz /> },
 ];
 
 const MenuSection = () => {
@@ -52,7 +53,7 @@ const MenuSection = () => {
     const filteredItems = menuItems.filter(item => item.category === activeTab);
 
     return (
-        <section className="flex flex-col items-center justify-center bg-light-background dark:bg-dark-background min-h-screen pt-24 px-0 w-full lg:px-20" id="menu">
+        <section className="flex flex-col items-center justify-center bg-light-background dark:bg-dark-background min-h-screen pt-24 px-0 w-full max-w-full lg:px-20" id="menu">
             <h2 className="text-4xl font-bold text-light mb-8 dark:text-gray-200 font-bossa">MENU</h2>
             <MenuTabs categories={MENU_CATEGORIES} activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full mt-6">
@@ -62,7 +63,7 @@ const MenuSection = () => {
             </div>
             <Button
                 onClick={() => navigate(`/menu/${activeTab}`)}
-                className="mt-4 px-4 py-2 text-white bg-[#b45f33] rounded-full shadow-md hover:bg-[#9e4e29] transition duration-200"
+                className="mt-4 px-4 py-2 text-light-secondary bg-light-primary dark:bg-dark-primary rounded-full shadow-md hover:bg-light-accent dark:hover:bg-dark-accent transition duration-200"
             >
                 More
             </Button>

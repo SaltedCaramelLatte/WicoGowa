@@ -6,7 +6,7 @@ import GallerySection from '@/components/home/GallerySection';
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full max-w-full px-0">
       <div id="home">
         <HeroSection />
       </div>
