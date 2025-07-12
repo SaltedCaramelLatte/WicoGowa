@@ -52,7 +52,7 @@ const MenuSection = () => {
     const filteredItems = menuItems.filter(item => item.category === activeTab);
 
     return (
-        <section className="flex flex-col items-center justify-center bg-light-background dark:bg-dark-background min-h-screen pt-24 px-4 lg:px-20" id="menu">
+        <section className="flex flex-col items-center justify-center bg-light-background dark:bg-dark-background min-h-screen pt-24 px-0 w-full lg:px-20" id="menu">
             <h2 className="text-4xl font-bold text-light mb-8 dark:text-gray-200 font-bossa">MENU</h2>
             <MenuTabs categories={MENU_CATEGORIES} activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 justify-center w-full mt-6">

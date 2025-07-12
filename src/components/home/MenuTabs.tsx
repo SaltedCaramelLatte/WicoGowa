@@ -7,7 +7,7 @@ interface MenuTabsProps {
 }
 
 const MenuTabs = ({ categories, activeTab, setActiveTab }: MenuTabsProps) => (
-  <div className="overflow-x-auto w-full max-w-3xl px-0"> {/* Hapus padding kiri */}
+  <div className="overflow-x-auto w-full min-w-0 px-0 pl-10"> {/* padding kiri agar tab tidak kepotong */}
     <Tabs
       className="justify-center"
       placement="top"
@@ -15,8 +15,8 @@ const MenuTabs = ({ categories, activeTab, setActiveTab }: MenuTabsProps) => (
       style={{ marginTop: '20px' }}
       selectedKey={activeTab}
       classNames={{
-        tabList: 'flex flex-row min-w-max overflow-x-auto hide-scrollbar dark:text-gray-200 bg-transparent border border-gray-200 dark:border-gray-700 rounded-lg p-1',
-        base: 'mx-auto w-full',
+        tabList: 'flex flex-row min-w-max overflow-x-auto hide-scrollbar dark:text-gray-200 bg-transparent border border-gray-200 dark:border-gray-700 rounded-lg p-1 pl-2', // padding kiri pada tabList
+        base: 'mx-auto w-full min-w-0',
       }}
       variant="bordered"
       onSelectionChange={(key) => setActiveTab(String(key))}
