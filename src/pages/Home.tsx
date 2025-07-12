@@ -1,8 +1,8 @@
 // src/pages/Home.tsx
 import HeroSection from '@/components/home/HeroSections';
+import FacilitiesSection from '@/components/home/FacilitiesSection';
 import MenuSection from '@/components/home/MenuSection';
 import GallerySection from '@/components/home/GallerySection';
-import FacilitiesSection from '@/components/home/FacilitiesSection';
 
 const Home = () => {
   return (

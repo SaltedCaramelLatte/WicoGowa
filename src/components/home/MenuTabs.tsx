@@ -7,7 +7,7 @@ interface MenuTabsProps {
 }
 
 const MenuTabs = ({ categories, activeTab, setActiveTab }: MenuTabsProps) => (
-  <div className="overflow-x-auto w-full max-w-3xl">
+  <div className="overflow-x-auto w-full max-w-3xl px-0"> {/* Hapus padding kiri */}
     <Tabs
       className="justify-center"
       placement="top"

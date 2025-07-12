@@ -8,20 +8,14 @@ import { MenuItemType } from './menuData';
 
 const MenuListPage = () => {
     const { category } = useParams<{ category: string }>();
-    const { menuItems, loading } = useMenuData(); 
+    const { menuItems, loading } = useMenuData();
     const navigate = useNavigate();
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    useEffect(() => { window.scrollTo(0, 0); }, []);
 
-    const itemsToDisplay: MenuItemType[] = menuItems.filter(
-        (item) => item.category === category
-    );
+    if (loading) return <div>Loading...</div>;
 
-    if (loading) {
-        return <div>Loading...</div>;
-    }
+    const itemsToDisplay: MenuItemType[] = menuItems.filter(item => item.category === category);
 
     return (
         <section className="flex flex-col items-center justify-center min-h-screen bg-light-background dark:bg-dark-background py-10 px-4 lg:px-20">
@@ -32,7 +26,6 @@ const MenuListPage = () => {
             >
                 ← Kembali
             </Button>
-
             <h3 className="text-4xl font-bold font-bossa text-light dark:text-gray-200 mb-8 capitalize">
                 {category} Menu
             </h3>

@@ -2,15 +2,6 @@ import { Spacer } from "@nextui-org/react";
 import MenuItem from "../MenuItem";
 import { useMenuData } from '../../../hooks/useMenuData';
 
-interface MenuItemType {
-    title: string;
-    img: string;
-    price: string;
-    description: string;
-    status: string;
-    category?: string;
-}
-
 interface MenuListProps {
     title: string;
     category: string;
@@ -18,12 +9,8 @@ interface MenuListProps {
 
 const MenuList = ({ title, category }: MenuListProps) => {
     const { menuItems, loading } = useMenuData();
-
+    if (loading) return <div>Loading...</div>;
     const itemsToDisplay = menuItems.filter(item => item.category === category);
-
-    if (loading) {
-        return <div>Loading...</div>;
-    }
 
     return (
         <section className="flex flex-col items-center justify-center py-10 px-4 w-full">
@@ -33,9 +20,9 @@ const MenuList = ({ title, category }: MenuListProps) => {
                     <MenuItem item={item} index={index} visible={true} key={index} />
                 ))}
             </div>
-            <Spacer y={10} />
         </section>
     );
 };
 
 export default MenuList;
+  

@@ -9,6 +9,7 @@ interface MenuItemProps {
         description: string;
         price: string;
         status: string;
+        category?: string;
     };
     index: number;
     visible: boolean;
