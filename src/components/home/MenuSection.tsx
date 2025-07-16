@@ -50,7 +50,7 @@ const MenuSection = () => {
 
     // Kategori dinamis
     const categories = [
-        { key: "wico-original", title: "Wico Original" },
+        { key: "Original", title: "Original" },
         { key: "coffee", title: "Coffee" },
         { key: "sachet", title: "Sachet" },
         { key: "snack", title: "Snack" },

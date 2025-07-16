@@ -117,14 +117,14 @@ const AddMenuItem = ({ onAdd, uploadImageAndGetUrl, isSubmitting }: AddMenuItemP
                     className="p-2 border rounded-md"
                 >
                     <option value="ready">Ready</option>
-                    <option value="soldOut">Sold Out</option>
+                    <option value="soldOut">Sold</option>
                 </select>
                 <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
                     className="p-2 border rounded-md"
                 >
-                    <option value="wico-original">Wico Original</option>
+                    <option value="Original">Original</option>
                     <option value="coffee">Coffee</option>
                     <option value="sachet">Sachet</option>
                     <option value="snack">Snack</option>

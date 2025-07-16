@@ -8,6 +8,7 @@ interface MenuTabsProps {
 
 const MenuTabs = ({ categories, activeTab, setActiveTab }: MenuTabsProps) => (
   <div className="overflow-x-auto w-full max-w-3xl">
+  <div className="min-w-max inline-block">
     <Tabs
       className="justify-center"
       placement="top"
@@ -26,6 +27,8 @@ const MenuTabs = ({ categories, activeTab, setActiveTab }: MenuTabsProps) => (
       ))}
     </Tabs>
   </div>
+  </div>
+
 );
 
 export default MenuTabs;
