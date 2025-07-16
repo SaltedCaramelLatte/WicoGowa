@@ -126,6 +126,7 @@ const AddMenuItem = ({ onAdd, uploadImageAndGetUrl, isSubmitting }: AddMenuItemP
                 >
                     <option value="Original">Original</option>
                     <option value="coffee">Coffee</option>
+                    <option value="tea">Tea</option>
                     <option value="sachet">Sachet</option>
                     <option value="snack">Snack</option>
                     <option value="other">Other</option>

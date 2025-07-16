@@ -52,6 +52,7 @@ const MenuSection = () => {
     const categories = [
         { key: "Original", title: "Original" },
         { key: "coffee", title: "Coffee" },
+        { key: "tea", title: "Tea" },
         { key: "sachet", title: "Sachet" },
         { key: "snack", title: "Snack" },
         { key: "other", title: "Other" },
