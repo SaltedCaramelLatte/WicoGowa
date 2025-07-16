@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div className="flex justify-between items-center flex-col-reverse sm:flex-row text-center text-sm mt-5 px-8 space-y-4 sm:space-y-0">
                 <span className="text-gray-500 dark:text-gray-400">
-                    &copy; {currentYear} Wico Gowa
+                    &copy; {currentYear} Wico Gowa Marketing
                 </span>
                 <div className="flex items-center space-x-4 mt-3 sm:mt-0">
                     <ThemeToggle />
